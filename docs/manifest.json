@@ -1,0 +1,44 @@
+{
+  "name": "DuckHunt Clone",
+  "short_name": "duckhunt-clone",
+  "start_url": "./index.html",
+  "id": "./index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#db4938",
+  "orientation": "portrait-primary",
+  "description": "made with phaser.js 3 + vite, audio from pixabay, art and design by realskyquest",
+  "screenshots": [
+    {
+      "src": "./icons/screenshot.png",
+      "sizes": "547x654",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "screenshot1"
+    },
+    {
+      "src": "./icons/screenshot.png",
+      "sizes": "547x654",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "screenshot2"
+    }
+  ],
+  "icons": [
+    {
+      "src": "./icons/duck-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/duck-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/duck-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
