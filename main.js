@@ -1,5 +1,11 @@
 import Phaser from "phaser";
 
+let ASSET_PATH = '';
+
+if (window.location.href.includes('github.io')) {
+  ASSET_PATH = '/duckhunt-clone';
+}
+
 let sizes = {
   width: 512,
   height: 512,
@@ -28,13 +34,13 @@ let game = new Phaser.Game(config);
 let gameState = { huntedScore: 0 };
 
 function preload() {
-  this.load.image("blood", "/assets/blood.png");
-  this.load.image("duck", "/assets/duck.png");
-  this.load.image("background", "/assets/background.png");
+  this.load.image("blood", `${ASSET_PATH}/assets/blood.png`);
+  this.load.image("duck", `${ASSET_PATH}/assets/duck.png`);
+  this.load.image("background", `${ASSET_PATH}/assets/background.png`);
 
-  this.load.audio("flapSFX", "/assets/flap.mp3");
-  this.load.audio("shotSFX", "/assets/shot.mp3");
-  this.load.audio("quackSFX", "/assets/quack.mp3");
+  this.load.audio("flapSFX", `${ASSET_PATH}/assets/flap.mp3`);
+  this.load.audio("shotSFX", `${ASSET_PATH}/assets/shot.mp3`);
+  this.load.audio("quackSFX", `${ASSET_PATH}/assets/quack.mp3`);
 }
 
 function create() {
