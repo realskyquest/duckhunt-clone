@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DuckHunt Clone</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      #gameCanvas {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
+    <script>
+      window.onload = handleCanvasResize;
+      window.addEventListener("resize", handleCanvasResize);
+
+      function handleCanvasResize() {
+        var canvas = document.getElementById("gameCanvas");
+        var windowRatio = window.innerWidth / window.innerHeight;
+        var canvasRatio = canvas.width / canvas.height;
+
+        if (windowRatio < canvasRatio) {
+          canvas.style.width = "100%";
+          canvas.style.height = "auto";
+        } else {
+          canvas.style.width = "auto";
+          canvas.style.height = "100%";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <canvas id="gameCanvas"></canvas>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
