@@ -4,6 +4,7 @@ const filesToCache = [
   "./index.html",
   "./assets/index.js",
   "./assets/phaser.js",
+  "./js/neutralino.js",
   "./assets/flap.mp3",
   "./assets/quack.mp3",
   "./assets/shot.mp3",
