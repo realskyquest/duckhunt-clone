@@ -1,6 +1,6 @@
 # duckhunt-clone
 
-made with phaser.js 3 + vite, audio from pixabay, art and design by realskyquest
+made with phaser.js 3 + vite, audio from pixabay, art and design by realskyquest, the web game's source files are stored in docs
 
 This is a hybrid between vite and neutralinojs
 

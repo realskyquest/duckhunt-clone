@@ -32,9 +32,9 @@
       }
     </style>
 
-    <script src="./js/neutralino.js"></script>
+    <script src="/js/neutralino.js"></script>
     <script>
-      if (!window.location.href.includes('localhost:5173')) {
+      if (!window.location.href.includes('localhost:5173') && !window.location.href.includes('github.io')) {
           function onWindowClose() {
               Neutralino.app.exit();
           }
