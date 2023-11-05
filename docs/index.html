@@ -31,7 +31,17 @@
         max-height: 100%;
       }
     </style>
+
+    <script src="./js/neutralino.js"></script>
     <script>
+      if (!window.location.href.includes('localhost:5173')) {
+          function onWindowClose() {
+              Neutralino.app.exit();
+          }
+          Neutralino.init();
+          Neutralino.events.on("windowClose", onWindowClose);
+      }
+
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function () {
           navigator.serviceWorker
