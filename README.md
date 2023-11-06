@@ -1,15 +1,16 @@
 # duckhunt-clone
 
-made with phaser.js 3 + vite, audio from pixabay, art and design by realskyquest, the web game's source files are stored in docs
+This is a cross between Neutralinojs and Vita; it can be exported to the web and run as an executable.
 
-This is a hybrid between vite and neutralinojs
+Vite and Phaser.js 3 were used in the creation of the game, with realskyquest's artwork and Pixabay's music.
 
-use run.py to see the executable in testing mode | shortcut
+use run.py to build and view neutralinojs app
 
-use build.py to build the executables | shortcut
+npm install -- install modules                    
+npm run dev -- test the game in local host                          
+npm run build -- make build
 
-use "neu build" to get the executables, the executables will be in dist
+neu run -- uses the build                     
+neu build -- stores in dist          
 
-use "npm run dev" to host it on localhost:5173
-
-use "npm run build" to see the final product
+use resource hacker to make the icon and version info for your app

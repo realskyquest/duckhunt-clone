@@ -4,9 +4,6 @@ let ASSET_PATH = '';
 
 if (window.location.href.includes('github.io')) {
   ASSET_PATH = '/duckhunt-clone';
-  console.log("IN GITHUB")
-} else {
-  console.log("IN DEV")
 }
 
 let sizes = {
