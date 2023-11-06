@@ -4,8 +4,6 @@ This is a cross between Neutralinojs and Vita; it can be exported to the web and
 
 Vite and Phaser.js 3 were used in the creation of the game, with realskyquest's artwork and Pixabay's music.
 
-use run.py to build and view neutralinojs app
-
 npm install -- install modules                    
 npm run dev -- test the game in local host                          
 npm run build -- make build
