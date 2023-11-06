@@ -1,6 +1,7 @@
-const cacheName = "duck-hunt-clone-v1";
+const cacheName = "duckhunt-clone-v1";
 const filesToCache = [
   "./",
+  "./manifest.json",
   "./index.html",
   "./assets/index.js",
   "./assets/phaser.js",
@@ -28,3 +29,20 @@ self.addEventListener("fetch", (fetchEvent) => {
     })
   );
 });
+
+self.addEventListener('activate', event => {
+  const cacheWhitelist = [cacheName];
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cacheName => {
+          // Only delete caches of this app
+          if (cacheWhitelist.indexOf(cacheName) === -1 && cacheName.startsWith('duckhunt-clone')) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+});
+

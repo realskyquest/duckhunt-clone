@@ -34,7 +34,7 @@
 
     <script src="./js/neutralino.js"></script>
     <script>
-      if (!window.location.href.includes('localhost:5173') && !window.location.href.includes('github.io')) {
+      if (!window.location.href.includes('localhost:5173') && !window.location.href.includes('github.io') && !window.location.href.includes('localhost:4173')) {
           function onWindowClose() {
               Neutralino.app.exit();
           }
@@ -42,13 +42,15 @@
           Neutralino.events.on("windowClose", onWindowClose);
       }
 
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker
-            .register("./serviceWorker.js")
-            .then((res) => console.log("service worker registered"))
-            .catch((err) => console.log("service worker not registered", err));
-        });
+      if (window.location.href.includes('github.io')) {
+          if ("serviceWorker" in navigator) {
+              window.addEventListener("load", function () {
+              navigator.serviceWorker
+                .register("./serviceWorker.js")
+                .then((res) => console.log("service worker registered"))
+                .catch((err) => console.log("service worker not registered", err));
+              });
+          }
       }
 
       window.onload = handleCanvasResize;
