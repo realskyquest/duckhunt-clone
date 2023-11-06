@@ -1,43 +1,43 @@
 {
-  "applicationId": "duckhunt-clone",
-  "version": "1.0.0",
-  "defaultMode": "window",
-  "port": 0,
-  "enableServer": true,
-  "enableNativeAPI": true,
-  "tokenSecurity": "one-time",
-  "documentRoot": "/docs/",
-  "url": "/",
-  "logging": {
-    "enabled": false,
-    "writeToLogFile": false
-  },
-  "modes": {
-    "window": {
-      "title": "DuckHunt Clone",
-      "icon": "/docs/icons/duck-192.png",
-      "width": 800,
-      "height": 500,
-      "minWidth": 400,
-      "minHeight": 200,
-      "fullScreen": false,
-      "alwaysOnTop": false,
-      "enableInspector": true,
-      "borderless": false,
-      "maximize": false,
-      "hidden": false,
-      "resizable": true,
-      "center": true,
-      "useSavedState": false,
-      "exitProcessOnClose": false
-    }
-  },
-  "cli": {
-    "binaryName": "duckhunt-clone",
-    "resourcesPath": "/docs/",
-    "extensionsPath": "/extensions/",
-    "clientLibrary": "/docs/js/neutralino.js",
-    "binaryVersion": "4.14.1",
-    "clientVersion": "3.12.0"
-  }
+   "applicationId":"s.neutralino.duckhunt-clone",
+   "version":"1.0.0",
+   "defaultMode":"window",
+   "port":0,
+   "enableServer":true,
+   "enableNativeAPI":true,
+   "tokenSecurity":"one-time",
+   "documentRoot":"/docs/",
+   "url":"/",
+   "logging":{
+      "enabled":false,
+      "writeToLogFile":false
+   },
+   "modes":{
+      "window":{
+         "title":"DuckHunt Clone",
+         "icon":"/resources/public/icons/duck-192.png",
+         "width":800,
+         "height":500,
+         "minWidth":400,
+         "minHeight":200,
+         "fullScreen":false,
+         "alwaysOnTop":false,
+         "enableInspector":true,
+         "borderless":false,
+         "maximize":false,
+         "hidden":false,
+         "resizable":true,
+         "center":true,
+         "useSavedState":false,
+         "exitProcessOnClose":false
+      }
+   },
+   "cli":{
+      "binaryName":"duckhunt-clone",
+      "resourcesPath":"/docs/",
+      "extensionsPath":"/extensions/",
+      "clientLibrary":"/docs/js/neutralino.js",
+      "binaryVersion":"4.14.1",
+      "clientVersion":"3.12.0"
+   }
 }

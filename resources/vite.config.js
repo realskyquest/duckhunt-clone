@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 export default defineConfig({
   base: "./",
   build: {
-    outDir: "docs",
+    outDir: "../docs",
     chunkSizeWarningLimit: 1600,
     rollupOptions: {
       output: {
